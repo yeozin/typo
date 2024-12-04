@@ -6,7 +6,7 @@ class App{
 
         WebFont.load({
             google: {
-              families: ['Montserrat:400']
+              families: ['Hahmlet:400']
             },
             fontactive: () => {
                 // this.text = new Text();
@@ -67,7 +67,7 @@ class App{
         // 필터 적용 후 글 색 변경은 여기서 가능
         const uniformData = {
             threshold: 0.5, 
-            mr: 0.0 / 255.0,
+            mr: 153.0 / 255.0,
             mg: 0.0 / 255.0,
             mb: 0.0 / 255.0,
         };

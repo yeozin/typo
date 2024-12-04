@@ -14,9 +14,9 @@ export class Text{
         this.canvas.height = stageHeight;
 
         const myText = str;
-        const fontWidth = 500;
-        const fontSize = 750;
-        const fontName = 'Montserrat';
+        const fontWidth = 100;
+        const fontSize = 130;
+        const fontName = 'Hahmlet';
 
         this.ctx.clearRect(0,0,stageWidth, stageHeight);
         this.ctx.font = `${fontWidth} ${fontSize}px ${fontName}`;
@@ -30,10 +30,10 @@ export class Text{
         this.ctx.fillText(
             myText,
             (stageWidth - fontPos.width)/2,
-            fontPos.actualBoundingBoxAscent+
-            fontPos.actualBoundingBoxDescent + 
-            ((stageHeight - fontSize) / 2)
+            fontPos.actualBoundingBoxAscent+            
+            ((stageHeight - fontSize)/2)
         );
+        
 
         return this.dotPos(density, stageWidth, stageHeight);
     }
